@@ -5,7 +5,7 @@ from dataclasses import dataclass, field
 from typing import Any
 
 from .decision import Decision
-from .event import Event
+from .observation import Observation
 
 
 @dataclass
@@ -38,7 +38,7 @@ class Agent(ABC):
         self.state = AgentState()
 
     @abstractmethod
-    def decide(self, event: Event) -> list[Decision]:
+    def decide(self, observation: Observation) -> list[Decision]:
         """React to an event."""
         raise NotImplementedError
 
@@ -49,5 +49,5 @@ class PassiveAgent(Agent):
     Useful for tests.
     """
 
-    def decide(self, event: Event) -> list[Decision]:
+    def decide(self, observation: Observation) -> list[Decision]:
         return []
