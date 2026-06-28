@@ -39,7 +39,7 @@ class Agent(ABC):
 
     @abstractmethod
     def decide(self, observation: Observation) -> list[Decision]:
-        """React to an event."""
+        """Make decisions from an observation."""
         raise NotImplementedError
 
 
