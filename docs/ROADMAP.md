@@ -5,7 +5,7 @@
 - [x] Core Language
 - [x] Episode
 - [x] Agent
-- [ ] Environment
+- [ ] World
 - [ ] Simulation
 - [ ] Runner
 

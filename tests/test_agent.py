@@ -2,7 +2,7 @@ from foundry.core.agent import (
     AgentIdentity,
     PassiveAgent,
 )
-from foundry.core.event import Event
+from foundry.core import Observation
 
 
 def test_agent_identity():
@@ -24,7 +24,7 @@ def test_passive_agent_returns_no_decisions():
         )
     )
 
-    decisions = agent.decide(Event(type="tick"))
+    decisions = agent.decide(Observation(attributes={"tick": True}))
 
     assert decisions == []
 
