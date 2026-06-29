@@ -135,6 +135,36 @@ Open.
 
 ---
 
+## Q-006
+
+### What is the responsibility of an Episode?
+
+Current thinking:
+
+An Episode represents one bounded execution.
+
+However, it remains unclear whether an Episode should own the history of that execution or merely define its boundaries.
+
+Possible directions:
+
+- Episode owns recorded history.
+- Episode provides boundaries while another abstraction (for example, a Recorder) owns history.
+- Episode owns only metadata while applications choose how history is preserved.
+
+Question:
+
+What is the minimum responsibility that every Episode must have?
+
+Status:
+
+Open.
+
+Evidence needed:
+
+Build the first evolving world and observe whether Episode naturally accumulates additional responsibilities.
+
+---
+
 # Principles
 
 Questions are valuable.
