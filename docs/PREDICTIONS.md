@@ -97,3 +97,27 @@ A domain requires introducing domain-specific foundational abstractions.
 Status:
 
 Active.
+
+---
+
+---
+
+## P-006
+
+### Architectural concepts are best evaluated by the unique authority they own.
+
+Current hypothesis:
+
+Authority provides a stronger basis for evaluating architectural concepts than behavior.
+
+Behavior explains what a concept does.
+
+Authority explains why it deserves to exist.
+
+Evidence against:
+
+A necessary architectural concept cannot be justified through unique authority, yet is clearly justified through behavior alone.
+
+Status:
+
+Active.

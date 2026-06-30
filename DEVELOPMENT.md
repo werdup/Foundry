@@ -1,10 +1,10 @@
-# Foundry Development Process
+# Foundry Development
 
-Foundry is not designed through intuition.
+This document describes how Foundry evolves.
 
-It is discovered through evidence.
+It does not describe Python conventions or coding standards.
 
-The purpose of this document is to describe how architectural decisions are made and how the framework evolves over time.
+It describes how architectural knowledge enters the framework.
 
 ---
 
@@ -12,29 +12,33 @@ The purpose of this document is to describe how architectural decisions are made
 
 Protect uncertainty.
 
-When the correct architecture is unknown, document the uncertainty rather than prematurely resolving it.
+When the correct architecture is unknown, preserve the uncertainty rather than prematurely resolving it.
 
-Questions are preserved until experiments provide sufficient evidence for an architectural decision.
+Questions exist to be explored.
+
+Predictions exist to be challenged.
+
+Architecture exists to explain evidence.
 
 ---
 
-# Development Philosophy
+# Guiding Principle
 
 Don't invent.
 
 Discover.
 
-Architectural concepts earn their place by repeatedly explaining evidence gathered through experiments.
+Architectural concepts earn their place through repeated explanatory power.
 
-Useful ideas are not sufficient.
+Useful concepts are insufficient.
 
-Necessary ideas survive repeated attempts to disprove them.
+Necessary concepts survive repeated attempts to disprove them.
 
 ---
 
-# Development Loop
+# Knowledge Lifecycle
 
-Every architectural change follows the same progression.
+Every architectural idea progresses through the same stages.
 
 ```text
 Pressure
@@ -57,7 +61,7 @@ Evidence
 
 ↓
 
-Architecture
+Architecture Decision
 
 ↓
 
@@ -76,15 +80,13 @@ Validation
 New Pressure
 ```
 
-The goal of each cycle is not implementation.
-
-The goal is improved understanding.
+No stage should be skipped.
 
 ---
 
-# Repository Knowledge Flow
+# Repository Knowledge Hierarchy
 
-Knowledge moves through the repository in a specific order.
+Knowledge moves through the repository in the following order.
 
 ```text
 QUESTIONS.md
@@ -110,53 +112,20 @@ Implementation Guides
 Source Code
 ```
 
-Questions come before architecture.
-
-Architecture comes before implementation.
+The repository intentionally separates uncertainty from conclusions.
 
 ---
 
-# Questions
+# Architectural Humility
 
-Questions identify uncertainty.
+When uncertainty exists:
 
-Questions should remain open until evidence supports an architectural decision.
+- Record the question.
+- Make the prediction.
+- Design the smallest useful experiment.
+- Gather evidence.
 
-Questions are expected.
-
-Premature answers are discouraged.
-
----
-
-# Predictions
-
-Predictions make the current architectural theory testable.
-
-Predictions must be falsifiable.
-
-If experiments contradict a prediction, the prediction should be updated or removed.
-
----
-
-# Experiments
-
-Experiments exist to gather evidence.
-
-They are intentionally small.
-
-They are not prototypes.
-
-They are not framework code.
-
-Their primary output is architectural observations.
-
----
-
-# ADRs
-
-Architectural Decision Records capture conclusions supported by evidence.
-
-An ADR should never introduce an idea that has not already emerged through experiments.
+Do not resolve uncertainty through intuition alone.
 
 ---
 
@@ -175,64 +144,50 @@ Every guide contains:
 - Architectural Impact
 - Next Question
 
-Each guide should represent exactly one idea.
+Every guide should represent exactly one architectural idea.
 
 ---
 
-# Working Agreement
+# Repository Synchronization
 
-The repository is the source of truth.
+The repository is the authoritative source of architectural truth.
 
-Conversation history provides context but is never authoritative.
+Conversation provides context.
 
-Before significant work begins:
+The repository records decisions.
+
+Before beginning significant work:
 
 - Synchronize with the latest repository.
 - Review recent architectural discussions.
-- Resolve any drift before continuing.
+- Resolve drift before implementation.
 
-When architectural drift is detected, stop implementation and resynchronize before proceeding.
-
----
-
-# Architectural Humility
-
-When uncertainty exists:
-
-- Record the question.
-- Make a prediction.
-- Design an experiment.
-- Gather evidence.
-
-Do not introduce new architectural concepts solely because they appear useful.
-
-Concepts earn their place through repeated explanatory power.
+Whenever repository state and shared understanding disagree, synchronize first.
 
 ---
 
 # Signs of Drift
 
-Development should pause whenever one or more of the following occur:
+Pause development whenever:
 
-- New abstractions are proposed without experimental evidence.
-- Multiple architectural questions are addressed in a single change.
-- Behavior is used to justify an abstraction instead of architectural responsibility.
-- Reusable framework code is written before the underlying problem is understood.
+- New abstractions are proposed without evidence.
+- Multiple architectural questions are addressed simultaneously.
+- Behavior is used to justify abstractions instead of architectural responsibility.
+- Framework code is written before understanding the problem.
 - Predictions begin to be treated as facts.
-- The repository and the shared architectural understanding are no longer aligned.
+- Repository state and shared understanding diverge.
 
-When drift occurs, synchronization takes priority over implementation.
+Drift should be corrected before implementation continues.
 
 ---
 
-# Success Criteria
+# Success
 
-The framework should become simpler over time.
+Foundry succeeds when:
 
-Experiments should produce better questions.
+- Questions become more precise.
+- Experiments become smaller.
+- Architecture becomes simpler.
+- Implementation becomes increasingly obvious.
 
-Architecture should emerge from evidence.
-
-Implementation should become increasingly obvious.
-
-If implementation becomes easier while the architecture becomes smaller, the process is working.
+The framework should become easier to explain as it grows.
