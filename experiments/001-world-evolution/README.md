@@ -1,55 +1,54 @@
-# Experiment 001
+# Experiment 001 — How Does a World Evolve?
 
-## Question
+## Status
 
-How does a World evolve?
+In Progress
 
 ---
 
-## Hypothesis
+## Research Question
+
+How does objective reality change?
+
+More specifically:
+
+> What is the smallest architectural concept responsible for changing a World?
+
+This experiment intentionally avoids designing a simulation engine. The goal is to understand world evolution before attempting to orchestrate it.
+
+---
+
+# Initial Hypothesis
 
 A World does not evolve itself.
 
-Instead, reality changes because something acts upon it.
+Instead, objective reality changes because something acts upon it.
 
-That "something" may be:
+Possible sources include:
 
-- a decision
-- a natural process
-- time
-- randomness
-- external input
+* Decisions
+* Natural processes
+* Time
+* Randomness
+* External input
 
-Simulation is responsible for orchestrating these changes, not defining them.
-
----
-
-## Success Criteria
-
-Identify the smallest architectural concept responsible for changing objective reality.
+Simulation may eventually orchestrate these changes, but it should not define them.
 
 ---
 
-## Failure Criteria
+# Experimental Method
 
-If the implementation requires vague concepts such as:
+Rather than designing abstractions first, we will construct a series of intentionally small worlds and observe how they evolve.
 
-- tick()
-- step()
-- update()
-- advance()
+Each world isolates a different source of change.
 
-before we understand what is actually changing, the experiment has failed.
-
----
-
-## Worlds
+## Planned Worlds
 
 ### Traffic Light
 
 Question:
 
-Can reality change without an observer or decision maker?
+Can reality change without observers or decision makers?
 
 ---
 
@@ -69,18 +68,117 @@ Where is the boundary between natural change and intentional change?
 
 ---
 
-## Findings
+# Observations
 
-_Not yet recorded._
+## Observation #1
+
+Time passing is **not sufficient** to change a World.
+
+If a traffic light controller is unplugged, time still passes but reality does not change.
+
+Time may enable change, but it is not itself the cause.
 
 ---
 
-## Architectural Impact
+## Observation #2
 
-_Not yet recorded._
+Not every source of change is a decision maker.
+
+A traffic light controller follows rules.
+
+Gravity follows rules.
+
+Weather follows rules.
+
+Lottery drawings follow rules.
+
+Reality can evolve without intention.
 
 ---
 
-## Follow-up Questions
+## Observation #3
 
-_Not yet recorded._
+A World does not evolve itself.
+
+Something external causes transitions in objective reality.
+
+This suggests that a World is the authority on reality, but not necessarily the mechanism that changes it.
+
+---
+
+## Observation #4
+
+A Decision is intent.
+
+Reality changes only when that intent is applied.
+
+A doctor's decision does not immediately heal a patient.
+
+A poker player's decision does not immediately move chips.
+
+A thermostat's decision does not instantly warm a room.
+
+Intent and reality appear to be separate concepts.
+
+---
+
+# Current Findings
+
+The experiment suggests that our original assumption was incomplete.
+
+We initially believed the missing abstraction was a Simulation.
+
+Current evidence suggests the more immediate question is:
+
+> How does intent become reality?
+
+This appears to be a narrower and more fundamental architectural problem.
+
+---
+
+# Architectural Impact
+
+No architectural changes have been made.
+
+Instead, the experiment produced evidence that will guide future architecture.
+
+Current implications include:
+
+* Worlds should remain authoritative over objective reality.
+* Decisions should not directly modify Worlds.
+* Time alone is insufficient to explain world evolution.
+* Intent and state transition may be separate concepts.
+
+These remain hypotheses until additional experiments are completed.
+
+---
+
+# Open Questions
+
+* What applies intent to objective reality?
+* Is there a single mechanism responsible for all world transitions?
+* Are natural processes and intentional actions fundamentally different?
+* Can one abstraction describe both?
+* Does Simulation orchestrate transitions rather than create them?
+
+---
+
+# Next Experiment
+
+Continue Experiment 001 by implementing the smallest possible Traffic Light world.
+
+The implementation should intentionally avoid introducing new abstractions.
+
+The objective is not to build reusable code.
+
+The objective is to gather additional evidence about how Worlds evolve.
+
+---
+
+# Success Criteria
+
+This experiment succeeds if it teaches us something that changes Foundry's architecture.
+
+It does **not** succeed simply because code was written.
+
+The primary deliverable is evidence.
