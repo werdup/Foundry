@@ -1,184 +1,89 @@
-# Experiment 001 — How Does a World Evolve?
+---
 
-## Status
+# Experiment 001A — CounterWorld
 
-In Progress
+## Goal
+
+Construct the smallest possible world containing objective state.
+
+No agents.
+
+No observations.
+
+No simulation.
+
+No framework.
+
+Only state.
 
 ---
 
-## Research Question
+## Result
 
-How does objective reality change?
+```python
+world.counter = 0
 
-More specifically:
+world.counter += 1
+```
 
-> What is the smallest architectural concept responsible for changing a World?
-
-This experiment intentionally avoids designing a simulation engine. The goal is to understand world evolution before attempting to orchestrate it.
-
----
-
-# Initial Hypothesis
-
-A World does not evolve itself.
-
-Instead, objective reality changes because something acts upon it.
-
-Possible sources include:
-
-* Decisions
-* Natural processes
-* Time
-* Randomness
-* External input
-
-Simulation may eventually orchestrate these changes, but it should not define them.
+The experiment successfully demonstrated that objective state can exist
+independently of the rest of the framework.
 
 ---
 
-# Experimental Method
+## Authority Audit
 
-Rather than designing abstractions first, we will construct a series of intentionally small worlds and observe how they evolve.
+### Objective State
 
-Each world isolates a different source of change.
-
-## Planned Worlds
-
-### Traffic Light
-
-Question:
-
-Can reality change without observers or decision makers?
+```
+counter
+```
 
 ---
 
-### Growing Seed
+### Authority to Observe
 
-Question:
-
-Is biological growth fundamentally different from a traffic light?
+The experiment.
 
 ---
 
-### Thermostat
+### Authority to Modify
 
-Question:
-
-Where is the boundary between natural change and intentional change?
+The experiment.
 
 ---
 
-# Observations
+### Architectural Observations
 
-## Observation #1
+#### Observation #5
 
-Time passing is **not sufficient** to change a World.
+The experiment exists outside the modeled world.
 
-If a traffic light controller is unplugged, time still passes but reality does not change.
+Unlike an Agent, the experiment may inspect objective state directly.
 
-Time may enable change, but it is not itself the cause.
-
----
-
-## Observation #2
-
-Not every source of change is a decision maker.
-
-A traffic light controller follows rules.
-
-Gravity follows rules.
-
-Weather follows rules.
-
-Lottery drawings follow rules.
-
-Reality can evolve without intention.
+This is acceptable because experiments are external observers rather than
+participants in the modeled system.
 
 ---
 
-## Observation #3
+#### Observation #6
 
-A World does not evolve itself.
+Objective state changed because external code exercised authority over it.
 
-Something external causes transitions in objective reality.
+No Agent participated.
 
-This suggests that a World is the authority on reality, but not necessarily the mechanism that changes it.
+No Observation was created.
 
----
+No Decision was made.
 
-## Observation #4
-
-A Decision is intent.
-
-Reality changes only when that intent is applied.
-
-A doctor's decision does not immediately heal a patient.
-
-A poker player's decision does not immediately move chips.
-
-A thermostat's decision does not instantly warm a room.
-
-Intent and reality appear to be separate concepts.
+This suggests that objective state can change independently of the
+decision-making architecture.
 
 ---
 
-# Current Findings
+## Open Questions
 
-The experiment suggests that our original assumption was incomplete.
-
-We initially believed the missing abstraction was a Simulation.
-
-Current evidence suggests the more immediate question is:
-
-> How does intent become reality?
-
-This appears to be a narrower and more fundamental architectural problem.
-
----
-
-# Architectural Impact
-
-No architectural changes have been made.
-
-Instead, the experiment produced evidence that will guide future architecture.
-
-Current implications include:
-
-* Worlds should remain authoritative over objective reality.
-* Decisions should not directly modify Worlds.
-* Time alone is insufficient to explain world evolution.
-* Intent and state transition may be separate concepts.
-
-These remain hypotheses until additional experiments are completed.
-
----
-
-# Open Questions
-
-* What applies intent to objective reality?
-* Is there a single mechanism responsible for all world transitions?
-* Are natural processes and intentional actions fundamentally different?
-* Can one abstraction describe both?
-* Does Simulation orchestrate transitions rather than create them?
-
----
-
-# Next Experiment
-
-Continue Experiment 001 by implementing the smallest possible Traffic Light world.
-
-The implementation should intentionally avoid introducing new abstractions.
-
-The objective is not to build reusable code.
-
-The objective is to gather additional evidence about how Worlds evolve.
-
----
-
-# Success Criteria
-
-This experiment succeeds if it teaches us something that changes Foundry's architecture.
-
-It does **not** succeed simply because code was written.
-
-The primary deliverable is evidence.
+- Should a World expose mutable objective state?
+- Should objective state ever be directly modified?
+- If not, who has authority to modify it?
+- Is authority enforced by the framework or expressed by convention?

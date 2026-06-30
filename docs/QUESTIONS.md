@@ -8,6 +8,15 @@ They are research questions.
 
 A question should only leave this document when there is sufficient evidence to make a permanent architectural decision.
 
+
+| Status | Meaning |
+|---------|---------|
+| Open | Identified but not yet investigated |
+| Exploring | Active experiments are gathering evidence |
+| Validated | Evidence consistently supports an answer |
+| ADR | Architectural decision recorded |
+| Archived | No longer relevant |
+
 ---
 
 # Active Questions
@@ -174,3 +183,77 @@ They prevent premature certainty.
 A good architectural decision is based on evidence rather than intuition.
 
 Foundry intentionally preserves important unanswered questions until experience provides enough information to resolve them.
+
+---
+
+## Q-007
+
+### Who has authority to modify objective state?
+
+Current thinking:
+
+A World owns objective state.
+
+However, ownership does not necessarily imply that the World is the only component capable of modifying that state.
+
+Experiments currently modify state directly.
+
+Agents express intent rather than directly changing objective state.
+
+Question:
+
+What architectural component is responsible for exercising authority over objective state?
+
+Status:
+
+Exploring.
+
+Evidence needed:
+
+Continue Experiment 001 using progressively richer worlds.
+
+---
+
+## Q-008
+
+### Is authority a first-class concept or merely an analytical lens?
+
+Current thinking:
+
+Every core abstraction appears to own authority over something.
+
+World owns objective state.
+
+Observation owns perceived information.
+
+Agent owns decisions.
+
+Episode owns execution boundaries.
+
+Question:
+
+Should authority become an explicit architectural concept, or should it remain a way of evaluating existing abstractions?
+
+Status:
+
+Exploring.
+
+---
+
+## Q-009
+
+### Should experiments intentionally exist outside the framework?
+
+Current thinking:
+
+Experiments currently avoid Foundry abstractions until architectural evidence has been gathered.
+
+Question:
+
+Should experiments remain framework-independent, or should they gradually migrate toward Foundry as concepts become validated?
+
+Status:
+
+Exploring.
+
+---
