@@ -87,3 +87,36 @@ decision-making architecture.
 - Should objective state ever be directly modified?
 - If not, who has authority to modify it?
 - Is authority enforced by the framework or expressed by convention?
+
+---
+
+## Candidate Review — Event
+
+### Proposed Authority
+
+Unknown.
+
+### Existing Authorities Examined
+
+- Objective state → World
+- Perceived information → Observation
+- Intent → Decision
+- Execution boundary → Episode
+
+### Result
+
+No unique authority identified.
+
+Current conclusion:
+
+Do not introduce Event until a responsibility emerges that cannot naturally belong to an existing abstraction.
+
+---
+
+### Impact on Current Theory
+
+The authority lens provided a clearer justification for rejecting Event than a behavior-based analysis.
+
+This strengthens the current hypothesis that architectural concepts should be evaluated by the unique authority they own.
+
+Additional candidate reviews are required before this hypothesis can be considered validated.
