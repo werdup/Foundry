@@ -185,3 +185,60 @@ None currently identified.
 ### Status
 
 Active
+
+---
+
+---
+
+## P-008
+
+### Episodes define completion boundaries rather than temporal boundaries.
+
+### Current Hypothesis
+
+An Episode represents a bounded unit of execution organized around the completion of a coherent objective.
+
+Episodes are not primarily defined by elapsed time.
+
+Instead, an Episode begins when execution becomes committed toward a specific objective and concludes when that objective reaches a terminal outcome.
+
+Terminal outcomes may include:
+
+- successful completion
+- cancellation
+- abandonment
+- failure
+
+Interruptions such as pauses, shift changes, or delays do not necessarily create new Episodes.
+
+### Predicted Evidence
+
+If this hypothesis is correct, independent domains should consistently demonstrate that:
+
+- Episodes remain intact across interruptions in execution.
+- Agent changes do not necessarily create new Episodes.
+- World changes may occur without changing Episode boundaries.
+- Episode boundaries are determined by objective continuity rather than elapsed time.
+
+### Evidence Against
+
+This prediction should be weakened if a domain demonstrates any of the following:
+
+- elapsed time alone determines Episode boundaries.
+- temporary interruptions necessarily create new Episodes.
+- changing Agents always creates a new Episode.
+- Episode completion cannot be explained through objective completion criteria.
+
+### Current Evidence
+
+Supporting
+
+- DOMAIN-004 — Manufacturing (preliminary)
+
+Contradicting
+
+None currently identified.
+
+### Status
+
+Active.
