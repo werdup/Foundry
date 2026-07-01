@@ -179,3 +179,106 @@ The study succeeds if it either:
 - reveals where the architecture is incomplete.
 
 Either outcome is valuable.
+
+---
+
+# Walkthrough 001 Summary
+
+---
+
+## What the Domain Taught Us
+
+### Domain Observation 1
+
+Survey branching does not create multiple Worlds.
+
+It creates multiple Observations.
+
+Different respondents receive different information while remaining consistent with the same objective state.
+
+---
+
+### Domain Observation 2
+
+The World exists before any Agent interacts with it.
+
+Agents participate in an existing World rather than creating one.
+
+---
+
+### Domain Observation 3
+
+A respondent's decision and the resulting objective state are distinct.
+
+Intent and recorded state should not be treated as the same thing.
+
+---
+
+### Domain Observation 4
+
+Survey logic produces different Observations from the same World according to objective rules.
+
+---
+
+### Domain Observation 5
+
+A completed survey contains objective data but not objective conclusions.
+
+Narratives emerge after observation rather than existing within the World.
+
+---
+
+### Domain Observation 6
+
+Consultants reason over Observations rather than directly over the World.
+
+Dashboards, reports, and exports remain representations.
+
+---
+
+### Domain Observation 7
+
+Observations provide information.
+
+Meaning is constructed by the Agent.
+
+Different Agents may construct different understandings from identical Observations.
+
+---
+
+## Emerging Interpretations
+
+The following ideas are becoming stronger but remain hypotheses.
+
+- Observation appears to define the information available for decision-making.
+- Survey branching reinforces Observation rather than requiring a new abstraction.
+- The authority lens continues to explain why new concepts have not been required.
+- Agents appear to construct internal models rather than simply reacting to observations.
+- Decisions appear to emerge from an Agent's internal model of the World.
+
+## Open Questions
+
+- Can an Agent participate in a World while simultaneously reasoning about it?
+- What applies a Decision to the World?
+- Can a perfect Observation exist?
+- Where does shared knowledge reside?
+- Can meaning ever be transferred, or is it always reconstructed?
+- Is meaning best understood as an Agent's internal model of the World?
+
+---
+
+## Pressure Summary
+
+Strengthened
+
+- World
+- Observation
+- Agent
+- Authority Lens
+
+Challenged
+
+- Relationship between Decision and World
+- Responsibility of Agent
+
+No new foundational abstractions emerged.
