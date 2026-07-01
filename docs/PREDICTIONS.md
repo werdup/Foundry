@@ -100,8 +100,6 @@ Active.
 
 ---
 
----
-
 ## P-006
 
 ### Architectural concepts are best evaluated by the unique authority they own.
@@ -121,3 +119,69 @@ A necessary architectural concept cannot be justified through unique authority, 
 Status:
 
 Active.
+
+---
+
+## P-007
+
+### Agents maintain internal models of the World.
+
+### Current Hypothesis
+
+Agents do not react directly to Observations.
+
+Instead, Observations are used to update an Agent's internal model of the World.
+
+Decisions emerge from the Agent's current internal model rather than directly from incoming information.
+
+This internal model may include:
+
+- objective state
+- expectations
+- goals
+- previous observations
+- models of other Agents
+
+These are considered internal properties of an Agent rather than separate architectural abstractions.
+
+---
+
+### Predicted Evidence
+
+If this hypothesis is correct, independent domains should consistently demonstrate that:
+
+- identical Observations can produce different Decisions.
+- Agent behavior changes when internal models change without requiring new Observations.
+- communication transfers information that allows another Agent to reconstruct an updated internal model.
+- no additional foundational abstraction is required to explain reasoning.
+
+---
+
+### Evidence Against
+
+This prediction should be weakened if a domain demonstrates any of the following:
+
+- Decisions emerge directly from Observations without an intermediate internal model.
+- A necessary architectural abstraction exists outside the Agent to explain reasoning.
+- Internal models can be transferred directly between Agents rather than reconstructed.
+- Two identical Agents receiving identical Observations consistently produce different Decisions without any difference in internal state.
+
+---
+
+### Current Evidence
+
+Supporting:
+
+- CounterWorld
+- DOMAIN-001 — Marketing Research
+- DOMAIN-002 — Poker (preliminary)
+
+Contradicting:
+
+None currently identified.
+
+---
+
+### Status
+
+Active
